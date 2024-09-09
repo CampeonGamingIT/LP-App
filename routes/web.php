@@ -1,11 +1,11 @@
 <?php
 
+use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'home');
+Route::post('/{domain}/{path}/{lang}/{curr}/{query_string}', LandingPageController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
