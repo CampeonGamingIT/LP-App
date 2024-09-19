@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Home</title>
 </head>
 <body>
@@ -47,7 +47,7 @@
                 <input type="text" name="bgImg" id="bgImg" class="border border-gray-400 ms-1.5 mt-0.5" required>
             </div>
 
-            <x-primary-button class="mt-3">Submit</x-primary-button>
+            <x-primary-button class="mt-3 bg-danger">Submit</x-primary-button>
         </form>
     </div>
 
