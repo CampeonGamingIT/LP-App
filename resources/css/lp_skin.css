@@ -1,0 +1,147 @@
+/* ---- SKIN START ---- */
+
+
+/* ---- FONT ---- */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+
+:root {
+    --font-family: 'Fugaz One', sans-serif;
+
+    --pretitle-text: #FDDB4C;
+    --title-text: white;
+
+    --cta-bg: #B7B7B7;
+    --cta-text: white;
+
+    --cta-bg-hover: #FFFFFF;
+    --cta-text-hover: #B7B7B7;
+
+    --coupon-bg: #FFFFFF;
+    --coupon-text: #B7B7B7;
+
+    --features-text: white;
+
+    --footer-background: #303c43;
+    --footer-text: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 5px;
+    font-family: var(--font-family);
+
+}
+
+
+.cta-button {
+    font-family: var(--font-family);
+    color: var(--cta-text);
+    background: var(--cta-bg);
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.main .cta-button:hover {
+    color: var(--cta-text-hover);
+    background: var(--cta-bg-hover);
+}
+
+
+body {
+    background: var(--footer-background);
+}
+
+/*
+header {
+    background: linear-gradient(#031939, transparent);
+}
+*/
+
+footer {
+    color: var(--footer-text);
+    background: var(--footer-background);
+}
+
+
+
+.main-box {
+    /*
+    background: #1f1f1f1e;
+    box-shadow: 0px 0px 60px 40px #1f1f1f1e;
+*/
+}
+
+
+.main .hero-pretitle {
+    color: var(--pretitle-text);
+    text-shadow: 0px 0px 7px #000000e0;
+}
+
+.main .hero-title {
+    color: var(--title-text);
+    text-shadow: 0px 0px 7px #000000e0;
+}
+
+.modal-header {
+    background: var(--cta-bg);
+}
+
+.btn-close {
+    opacity: 1;
+}
+
+.modal-title {
+    color: var(--cta-text);
+}
+
+.features h4 {
+    color: var(--features-text);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.features .feature1,
+.features .feature2,
+.features .feature3 {
+    height: 45px;
+}
+
+.coupon-code {
+    border-color: var(--coupon-text);
+    border-radius: 99px;
+    color: var(--coupon-text);
+    background: var(--coupon-bg);
+
+}
+
+.coupon-code-img {
+    filter: hue-rotate(180deg) brightness(0.6);
+}
+
+@media only screen and (max-width: 767px) {
+    .main-box {
+        background: unset;
+        box-shadow: unset;
+    }
+
+    .main .hero-title {
+        text-shadow: unset;
+    }
+
+    .main .hero-pretitle {
+        text-shadow: unset;
+    }
+
+}
+
+/* ---- SKIN END ---- */
