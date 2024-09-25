@@ -1,1 +1,0 @@
-<x-head></x-head>
