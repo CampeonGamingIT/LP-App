@@ -1,3 +1,5 @@
+@props(['page_logo'])
+
 <!--HEADER-->
 <header>
     <div class="container py-2">
