@@ -1,3 +1,5 @@
+@props(['promo_code' => ''])
+
 <!--MAIN--->
 <section class="main d-flex flex-wrap align-items-end align-items-md-center ">
     <div class="container py-5">
@@ -18,9 +20,10 @@
                 <div class="container px-0">
                     <div class="row align-items-center gy-2 gy-md-0">
                         <div class="col-12 col-md-auto">
-                            <?php
-                            loadRemoteFiles($cta_include_once);
-                            ?>
+                            @php
+                                var_dump(config('load_core_files.cta_include_once'));
+//                                loadRemoteFiles(config('load_core_files.cta_include_once'));
+                            @endphp
                         </div>
                         <div class="col-12 col-md-auto ">
 
